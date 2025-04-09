@@ -1,13 +1,11 @@
-# This workflow will build a package using Maven and then publish it to GitHub packages when a release is created
-# For mor1e information see: https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#apache-maven-with-a-settings-path
-
-name: Main
-
+name: Build Jar
 on:
   push:
-    tags:
-      - "-*.*.*"
-
+    branches:
+      - master
+      - v4
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
   build:
     runs-on: ubuntu-latest
