@@ -1,11 +1,10 @@
 name: Build Jar
 on:
   push:
-    branches:
-      - master
-      - v4
+    branches: [ "main" ]
   pull_request:
-    types: [opened, synchronize, reopened]
+    branches: [ "main" ]
+    
 jobs:
   build:
     runs-on: ubuntu-latest
