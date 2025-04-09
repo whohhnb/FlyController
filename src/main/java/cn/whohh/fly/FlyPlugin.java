@@ -2,10 +2,8 @@ package cn.whohh.fly;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
-// import net.kyori.adventure.text.minimessage.MiniMessage;
 
 import org.bukkit.Bukkit;
-// import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
