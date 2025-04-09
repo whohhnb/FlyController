@@ -4,6 +4,10 @@
 
  通过命令来管理玩家飞行（可调整单人、全部人），并且可以自定义修改配置文件的信息（支持RGB），可以提供玩家使用某指令的权限，可以管理对某世界的飞行控制
 
+### 兼容性
+ 
+ 插件支持Minecraft 1.20+的版本，且支持Folia
+ 
 ### 指令补全
 ![alt text](/img/image.png)
 
@@ -36,12 +40,19 @@
 ### 配置文件
 
 ```
+# 允许的世界
 enabled-worlds:
   - world
   - world_nether
   - world_the_end
+
+# 在退出时保持飞行状态
 keep-fly-on-logout: false
+
+# 在进入时保持飞行
 join-fly: true
+
+# 输出信息（支持RGB）
 messages:
   no-permission: "&#FF5555✘&#FF6666 你&#FF7777没&#FF8888有&#FF9999权&#FFAAAA限"
   player-only: "&#FFAA00⚠&#FFBB11 该&#FFCC22命&#FFDD33令&#FFEE44需&#FFFF55要&#FFEE66玩家"
